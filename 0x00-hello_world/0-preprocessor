@@ -1,2 +1,4 @@
 #!/bin/bash
-make $CFILE >> c
+export CFILE=main.c
+gcc $CFILE -o main
+./main >> c
