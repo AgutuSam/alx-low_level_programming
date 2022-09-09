@@ -9,23 +9,28 @@
 
 int main(void)
 {
-	int num[10] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
-	int n = 10;
+	int c;
+	int d = 0;
 
-/* your code goes there */
-	int i;
-
-	for (i = 0 ; i < n ; i++)
-		if (i < n - 1)
+	while (d < 10)
+	{
+		c = 0;
+		while (c < 10)
 		{
-			putchar((num[i] % 10) + '0');
-			putchar(',');
+			if (d != c && d < c)
+			{
+				putchar('0' + d);
+				putchar('0' + c);
+				if (c + d != 17)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+			c++;
 		}
-		else if (i == n - 1)
-		{
-			putchar((num[i] % 10) + '0');
-			putchar('\n');
-		}
-/* your code goes there */
+		d++;
+	}
+	putchar('\n');
 	return (0);
 }
