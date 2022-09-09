@@ -25,7 +25,7 @@ int main(void)
 				a = 0;
 				while (a < 10)
 				{
-					if ((a + b) > (d + c))
+					if ((a + b) >= (d + c))
 					{
 						putchar('0' + d);
 						putchar('0' + c);
