@@ -2,10 +2,10 @@
 
 /**
  *  * _islower - only function.
- *   *
- *    * Return: Always 0.
+ *   * @c: - the input parameter
+ *    * Return: Always an integer.
  */
-int _islower(int c)
+int _islower(int c) /*c is the parameter*/
 {
 	char chk;
 	int nu = 0;
