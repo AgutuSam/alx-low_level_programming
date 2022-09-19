@@ -7,7 +7,7 @@
  */
 void print_rev(char *s)
 {
-	char myStr[100];
+	char myStr[1000];
 	int i;
 	int count = 0;
 
