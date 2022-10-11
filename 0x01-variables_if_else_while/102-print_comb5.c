@@ -9,8 +9,6 @@
 
 int main(void)
 {
-	int a;
-	int b;
 	int c;
 	int d = 0;
 
@@ -19,25 +17,15 @@ int main(void)
 		c = 0;
 		while (c < 10)
 		{
-			b = 0;
-			while (b < 10)
+			if (d != c && d < c)
 			{
-				a = 0;
-				while (a < 10)
+				putchar('0' + d);
+				putchar('0' + c);
+				if (c + d != 17)
 				{
-					if ((a + b) >= (d + c))
-					{
-						putchar('0' + d);
-						putchar('0' + c);
-						putchar(' ');
-						putchar('0' + b);
-						putchar('0' + a);
-						putchar(',');
-						putchar(' ');
-					}
-					a++;
+					putchar(',');
+					putchar(' ');
 				}
-				b++;
 			}
 			c++;
 		}
